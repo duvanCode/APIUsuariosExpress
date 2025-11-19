@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "${PORT:-2020}:2020"
+      - "${PORT:-2020}:${PORT:-2020}"
     environment:
       - RAILWAY_STATIC_URL=${RAILWAY_STATIC_URL}
       - PUBLIC_URL=${PUBLIC_URL}
